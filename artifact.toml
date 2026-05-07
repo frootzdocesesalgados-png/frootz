@@ -1,17 +1,31 @@
-kind = "design"
-previewPath = "/__mockup"
-title = "Canvas"
+kind = "web"
+previewPath = "/"
+title = "Frootz - Doces & Salgados"
 version = "1.0.0"
-id = "XegfDyZt7HqfW2Bb8Ghoy"
+id = "artifacts/frootz"
+router = "path"
+
+[[integratedSkills]]
+name = "react-vite"
+version = "1.0.0"
 
 [[services]]
-localPort = 8081
-name = "Component Preview Server"
-paths = ["/__mockup"]
-
-[services.env]
-PORT = "8081"
-BASE_PATH = "/__mockup"
+name = "web"
+paths = [ "/" ]
+localPort = 24354
 
 [services.development]
-run = "pnpm --filter @workspace/mockup-sandbox run dev"
+run = "pnpm --filter @workspace/frootz run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/frootz", "run", "build" ]
+publicDir = "artifacts/frootz/dist/public"
+serve = "static"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "24354"
+BASE_PATH = "/"
