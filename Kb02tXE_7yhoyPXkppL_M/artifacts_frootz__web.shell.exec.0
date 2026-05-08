@@ -1,0 +1,161 @@
+
+> @workspace/frootz@0.0.0 dev /home/runner/workspace/artifacts/frootz
+> vite --config vite.config.ts --host 0.0.0.0
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J
+  [32m[1mVITE[22m v7.3.2[39m  [2mready in [0m[1m263[22m[2m[0m ms[22m
+
+  [32m➜[39m  [1mLocal[22m:   [36mhttp://localhost:[1m24354[22m/[39m
+  [32m➜[39m  [1mNetwork[22m: [36mhttp://172.31.124.130:[1m24354[22m/[39m
+[2m[32m  ➜[39m[22m[2m  press [22m[1mh + enter[22m[2m to show help[22m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m10:41:44 PM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/index.css, /src/components/layout/Navbar.tsx[22m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m10:41:45 PM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/index.css, /src/components/ProductCard.tsx[22m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m10:41:45 PM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/index.css, /src/components/ProductCard.tsx[22m [33m(x2)[39m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m10:41:45 PM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/App.tsx, /src/index.css[22m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m10:41:45 PM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/App.tsx, /src/index.css[22m [33m(x2)[39m
+[RUNTIME_ERROR]{"type":"runtime-error","timestamp":1778020906278,"name":"Error","message":"useCart must be used within a CartProvider","stack":"    at useCart /home/runner/workspace/artifacts/frootz/src/contexts/CartContext.tsx:73:11\n    at Navbar /home/runner/workspace/artifacts/frootz/src/components/layout/Navbar.tsx:8:26\n\n\n\n\n\n\n\n","loc":{"line":73,"column":11,"file":"/home/runner/workspace/artifacts/frootz/src/contexts/CartContext.tsx"},"frame":"71 |    const context = useContext(CartContext);\n72 |    if (context === undefined) {\n73 |      throw new Error(\"useCart must be used within a CartProvider\");\n   |            ^\n74 |    }\n75 |    return context;"}
+[RUNTIME_ERROR]{"type":"runtime-error","timestamp":1778020906558,"name":"Error","message":"useCart must be used within a CartProvider","stack":"    at useCart /home/runner/workspace/artifacts/frootz/src/contexts/CartContext.tsx:73:11\n    at Navbar /home/runner/workspace/artifacts/frootz/src/components/layout/Navbar.tsx:8:26\n\n\n\n\n\n\n\n","loc":{"line":73,"column":11,"file":"/home/runner/workspace/artifacts/frootz/src/contexts/CartContext.tsx"},"frame":"71 |    const context = useContext(CartContext);\n72 |    if (context === undefined) {\n73 |      throw new Error(\"useCart must be used within a CartProvider\");\n   |            ^\n74 |    }\n75 |    return context;"}
+[RUNTIME_ERROR]{"type":"runtime-error","timestamp":1778020906878,"name":"Error","message":"useCart must be used within a CartProvider","stack":"    at useCart /home/runner/workspace/artifacts/frootz/src/contexts/CartContext.tsx:73:11\n    at Navbar /home/runner/workspace/artifacts/frootz/src/components/layout/Navbar.tsx:8:26\n\n\n\n\n\n\n\n","loc":{"line":73,"column":11,"file":"/home/runner/workspace/artifacts/frootz/src/contexts/CartContext.tsx"},"frame":"71 |    const context = useContext(CartContext);\n72 |    if (context === undefined) {\n73 |      throw new Error(\"useCart must be used within a CartProvider\");\n   |            ^\n74 |    }\n75 |    return context;"}
+
+[31mCould not open CartContext.tsx in the editor.[39m
+
+[41m[30m ERR_PNPM_RECURSIVE_RUN_FIRST_FAIL [39m[49m [31m@workspace/frootz@0.0.0 dev: `vite --config vite.config.ts --host 0.0.0.0`[39m
+[31mCommand failed with signal "SIGTERM"[39m
