@@ -128,6 +128,7 @@ See `.local/skills/pnpm-workspace/references/openapi.md` for generated file path
 ## Common pitfalls
 
 - **Do not run `pnpm dev` or `pnpm run dev` at the workspace root.** Replit apps run via workflows, not root-level pnpm dev. The root has no `dev` script by design, and individual artifacts need env vars (`PORT`, `BASE_PATH`) that the workflow config wires up. To run or verify an app, use `restart_workflow <slug>` or view the preview pane — do not shell out to `pnpm dev`.
+- **Verify artifacts with `pnpm --filter @workspace/<slug> run typecheck`, not `build`.** `build` needs workflow-provided `PORT` and `BASE_PATH`, so it can fail from bash even when typecheck passes.
 - Do not introduce an all-composite setup for leaf workspace packages. Declaration emit from apps causes type portability issues (TS2742) when multiple versions of `@types/*` packages exist across workspace packages.
 - Do not add leaf workspace packages to the root `tsconfig.json` references; that solution file is for buildable libs only.
 - Prefer root commands with `--filter` when targeting a specific package:
