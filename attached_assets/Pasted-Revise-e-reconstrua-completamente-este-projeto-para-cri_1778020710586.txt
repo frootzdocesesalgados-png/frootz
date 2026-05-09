@@ -1,0 +1,81 @@
+Revise e reconstrua completamente este projeto para criar uma loja virtual completa, funcional e sem erros, pronta para rodar no navegador e no Netlify.
+
+1. CORREÇÃO GERAL
+- Corrija todos os erros que causam tela branca
+- Corrija caminhos de arquivos (CSS, JS, imagens)
+- Garanta que o site funcione 100% sem erros no console
+- Remova qualquer código de backend incompatível
+
+2. ESTRUTURA DO PROJETO
+Crie e organize os arquivos:
+- index.html (loja principal)
+- cart.html (carrinho)
+- admin.html (painel)
+- config.js (configurações)
+- script.js (lógica geral)
+- style.css (estilo)
+
+3. SISTEMA DE PRODUTOS
+- Produtos carregados dinamicamente
+- Campos: nome, preço, descrição, imagem, promoção
+- Mostrar produtos na página inicial
+
+4. PAINEL ADMIN (/admin.html)
+- Login simples (usuário e senha definidos no config.js)
+- Cadastrar produtos
+- Editar produtos
+- Excluir produtos
+- Upload de imagem (ou URL)
+- Salvar dados usando localStorage ou Firebase/Supabase
+- Interface simples e funcional
+
+5. CARRINHO DE COMPRAS
+- Adicionar produto ao carrinho
+- Remover produto
+- Alterar quantidade
+- Salvar carrinho no localStorage
+- Página de carrinho com total automático
+
+6. SISTEMA DE PEDIDO
+- Formulário com:
+  - Nome
+  - Telefone
+  - Endereço
+- Validação dos campos obrigatórios
+
+7. WHATSAPP
+- Criar botão "Finalizar Pedido"
+- Gerar link automático com:
+  - Lista de produtos
+  - Quantidades
+  - Total
+  - Dados do cliente
+- Usar formato wa.me
+
+8. CONFIGURAÇÃO EDITÁVEL
+No arquivo config.js incluir:
+- Número do WhatsApp
+- Usuário e senha do admin
+- Configuração de banco (se usar Firebase/Supabase)
+
+9. INTERFACE
+- Design limpo e responsivo
+- Botões claros:
+  - "Adicionar ao carrinho"
+  - "Ver carrinho"
+  - "Finalizar pedido"
+- Funcionar bem no celular
+
+10. FUNCIONAMENTO
+- Produtos cadastrados no admin aparecem automaticamente na loja
+- Carrinho funciona sem recarregar página
+- Tudo compatível com hospedagem estática (Netlify)
+
+11. EXPLICAÇÃO FINAL
+Explique claramente:
+- Como acessar o painel admin
+- Como adicionar produtos
+- Como mudar o número do WhatsApp
+- Como testar pedidos
+
+Garanta que tudo funcione perfeitamente sem erros.

@@ -1,0 +1,99 @@
+Refatore completamente o projeto para criar um painel administrativo totalmente funcional e editável, sem bugs.
+
+OBJETIVO:
+Permitir que eu consiga alterar TODAS as informações do site diretamente pelo painel admin, sem precisar mexer no código.
+
+1. CONFIGURAÇÕES GERAIS EDITÁVEIS
+No painel admin, criar uma seção chamada "Configurações da Loja" com campos para editar:
+
+- Nome da empresa
+- CNPJ
+- Logo da empresa (upload ou URL)
+- Número de WhatsApp
+- Telefone adicional (opcional)
+- Mensagem padrão do WhatsApp
+
+Salvar tudo no localStorage e carregar automaticamente no site.
+
+2. PRODUTOS (CRUD COMPLETO)
+No painel admin permitir:
+
+- Adicionar produto
+- Editar produto
+- Excluir produto
+
+Cada produto deve ter:
+- Nome
+- Preço
+- Descrição
+- Imagem (upload ou URL)
+- Promoção (preço promocional ou porcentagem)
+- Categoria (opcional)
+
+Salvar os produtos no localStorage (ou Firebase/Supabase se já estiver usando)
+
+3. ATUALIZAÇÃO AUTOMÁTICA
+- Todas as alterações feitas no admin devem aparecer automaticamente no site
+- Sem precisar recarregar manualmente
+
+4. INTERFACE DO ADMIN
+Criar páginas/seções claras:
+
+- Dashboard
+- Produtos
+- Configurações
+- Logout
+
+5. LOGIN ADMIN
+- Login simples com usuário e senha
+- Dados definidos no config.js
+- Bloquear acesso ao admin sem login
+
+6. LOJA (FRONTEND)
+- Mostrar nome da empresa
+- Mostrar logo
+- Mostrar produtos atualizados
+- Mostrar preços e promoções corretamente
+
+7. WHATSAPP
+- Usar o número configurado no admin
+- Gerar mensagem com:
+  - Produtos
+  - Quantidade
+  - Total
+  - Dados do cliente
+
+8. SALVAMENTO
+- Garantir que TODOS os dados persistam (localStorage)
+- Não perder dados ao recarregar a página
+
+9. CORREÇÃO DE ERROS
+- Corrigir qualquer erro que cause tela branca
+- Garantir que não existam erros no console
+
+10. ORGANIZAÇÃO
+- Código limpo e separado:
+  - admin.html
+  - index.html
+  - script.js
+  - config.js
+  - style.css
+
+11. USABILIDADE
+- Interface simples e fácil de usar
+- Botões claros:
+  - Salvar
+  - Editar
+  - Excluir
+
+12. EXPLICAÇÃO FINAL
+Explique claramente:
+- Como acessar o admin
+- Como alterar nome, logo, CNPJ e WhatsApp
+- Como adicionar e editar produtos
+- Como testar o pedido
+
+GARANTIR:
+- Sistema completo
+- Sem bugs
+- Tudo editável pelo painel
